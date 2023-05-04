@@ -2,9 +2,11 @@ package com.rezoo.phonecontact_compose
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
+@OptIn(FlowPreview::class)
 class ContactViewModel(
     private val dao: ContactDao
 ) :ViewModel(){
